@@ -1,0 +1,7 @@
+#folder idea
+.idea/
+.out/
+.lib/
+.src/test
+
+*.iml
