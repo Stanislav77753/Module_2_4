@@ -3,14 +3,5 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Module_2_4</display-name>
-  <servlet>
-    <servlet-name>SkillServlet</servlet-name>
-    <servlet-class>com.popovich.servlets.SkillServlet</servlet-class>
-  </servlet>
 
-  <servlet-mapping>
-    <servlet-name>SkillServlet</servlet-name>
-    <url-pattern>/skills</url-pattern>
-  </servlet-mapping>
 </web-app>
