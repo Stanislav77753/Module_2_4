@@ -9,14 +9,25 @@
 </head>
 <body>
 <h2>----------------------SKILLS------------------------</h2>
-<%
-    List<Skill> skills = (List)request.getAttribute("skills");
-    if(skills != null){
-        out.println("ID" + " - " + "SKILL");
-        for(Skill skill : skills){
-            out.println(skill.getId() + " - " + skill.getSkillName());
+<pre>
+    <%
+        List<Skill> skills = (List)request.getAttribute("skills");
+        if(skills != null){
+            out.println("ID" + " - " + "SKILL");
+            for(Skill skill : skills){
+                out.println(skill.getId() + " - " + skill.getSkillName());
+            }
         }
-    }
-%>
+    %>
+</pre>
+<div>
+    <core:forEach items="${skills}" var="skill">
+        <tr>
+            <td><core:out value="${skill.skillName}"/></td>
+            <td>${skill.skillName}</td>
+        </tr>
+    </core:forEach>
+</div>
+<a href="../../index.jsp">Back to main menu</a>
 </body>
 </html>
