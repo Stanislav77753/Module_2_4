@@ -1,7 +1,7 @@
 package com.popovich.service;
 
 import com.popovich.model.Skill;
-import com.popovich.repository.SkillRepoImp;
+import com.popovich.repository.RepoImp.SkillRepoImp;
 
 import java.util.List;
 
@@ -17,6 +17,11 @@ public class SkillService {
     }
 
     public void delete(Skill skill){
-        skillRepoImp.delete(skill);
+        List<Skill> skills = getAll();
+        for(Skill skill_db: skills){
+            if(skill_db.getSkillName().equals(skill.getSkillName())){
+                skillRepoImp.delete(skill_db);
+            }
+        }
     }
 }

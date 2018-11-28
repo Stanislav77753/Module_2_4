@@ -7,10 +7,16 @@
 <body>
 <h2>Hello! You are in database of developers</h2>
 <div>
-    <form action="skills" method="POST">
+    <form action="skills" method="GET">
         <input type="submit"  name="showSkills" value="Show all skills">
+        <input type="submit"  name="addSkill" value="Add skill">
+        <input type="submit"  name="deleteSkill" value="Delete skill">
     </form>
-    <a href="<c:url value="/skills"/>" target="_blank">add skill</a>
+    <form action="developers" method="GET">
+        <input type="submit"  name="showDevelopers" value="Show all developers">
+        <input type="submit"  name="addDeveloper" value="Add developer">
+        <input type="submit"  name="deleteDeveloper" value="Delete developer">
+    </form>
 </div>
 </body>
 </html>

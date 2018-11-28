@@ -1,6 +1,7 @@
-package com.popovich.repository;
+package com.popovich.repository.RepoImp;
 
 import com.popovich.model.Developer;
+import com.popovich.repository.DeveloperRepo;
 import com.popovich.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

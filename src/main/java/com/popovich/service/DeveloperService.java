@@ -1,7 +1,7 @@
 package com.popovich.service;
 
 import com.popovich.model.Developer;
-import com.popovich.repository.DeveloperRepoImp;
+import com.popovich.repository.RepoImp.DeveloperRepoImp;
 
 import java.util.List;
 
