@@ -74,7 +74,7 @@ public class DeveloperServlet extends HttpServlet {
             }else{
                 writer.println("<th>" + "-" + "</th>");
             }
-            writer.println("<th>" + developer.getAccount().getAccountData() + "</th>");
+            //writer.println("<th>" + developer.getAccount().getAccountData() + "</th>");
             writer.println("</tr>");
         }
         writer.println("</table>");
